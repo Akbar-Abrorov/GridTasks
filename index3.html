@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            grid-template-rows: auto auto auto auto;
+            gap: 10px;
+            width: 80%;
+            margin: 200px;
+        }
+        .item1{
+            grid-column:span 3;
+            grid-row:span 2;
+        }
+
+        .item3{
+            grid-column:span 2;
+            grid-row:span 2;
+        }
+
+        .item5{
+            grid-column:span 3;
+        }
+
+       .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+           color: #f0f0f0;
+            border-radius:10px;
+            padding: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items:center;
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s;
+       }
+        .item1{
+            background-color: #ff8000;
+        }
+        .item2{
+            background-color: aquamarine;
+        }
+        .item3{
+            background-color: darkmagenta;
+        }
+        .item4{
+            background-color: coral;
+        }
+        .item5{
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">HEADER</div>
+        <div class="grid-item item2">SLIDEBAR</div>
+        <div class="grid-item item3">ADVERT</div>
+        <div class="grid-item item4">CONTENT</div>
+        <div class="grid-item item5">FOOTER</div>
+    </div>
+    <a href="index4.html">Next Grid</a>
+
+</body>
+</html>
